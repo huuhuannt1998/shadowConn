@@ -1,0 +1,11 @@
+name: minReportingInterval
+attributes:
+  minInterval:
+    schema:
+      type: integer
+commands:
+  setMinInterval:
+    arguments:
+      - name: value
+        schema:
+          type: integer

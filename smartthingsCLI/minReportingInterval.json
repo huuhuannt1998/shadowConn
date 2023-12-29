@@ -1,0 +1,26 @@
+  {
+    "name": "minReportingInterval",
+    "id": "instantforge19660.minreportinginterval",
+    "version": 1,
+    "attributes": {
+      "minInterval": {
+        "schema": {
+          "type": "integer"
+        },
+        "setter": "setMinInterval" 
+      }
+    },
+    "commands": {
+      "setMinInterval": {
+        "arguments": [
+          {
+            "name": "value",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    }
+  }
+

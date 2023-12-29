@@ -1,0 +1,19 @@
+{
+  "dashboard":
+    { "states": [
+      { 
+        "label": "{{motionSensitivity.motionSensitivityValue}}" 
+      }
+      ] 
+    },
+  "detailView":
+    [
+      {
+        "displayType": "state",
+        "label": "Motion Sensitivity Value",
+        "state": { 
+          "value": "{{motionSensitivity.motionSensitivityValue}}" 
+        }
+      }
+    ]
+}

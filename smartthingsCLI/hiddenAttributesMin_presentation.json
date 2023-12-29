@@ -1,0 +1,19 @@
+{
+  "dashboard":
+    { "states": [
+      { 
+        "label": "{{minReportingInterval.minInterval}} seconds" 
+      }
+      ] 
+    },
+  "detailView":
+    [
+      {
+        "displayType": "state",
+        "label": "Minimum Reporting Interval",
+        "state": { 
+          "value": "{{minReportingInterval.minInterval}} seconds" 
+        }
+      }
+    ]
+}

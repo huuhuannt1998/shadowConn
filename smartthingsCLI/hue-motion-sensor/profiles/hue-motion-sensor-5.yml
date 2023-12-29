@@ -1,0 +1,34 @@
+name: hue-motion-sensor-5
+components:
+- id: main
+  capabilities:
+  - id: motionSensor
+    version: 1
+  - id: temperatureMeasurement
+    version: 1
+  - id: illuminanceMeasurement
+    version: 1
+  - id: battery
+    version: 1
+  - id: instantforge19660.pirodelay
+    version: 1
+  - id: instantforge19660.motionsensitivity
+    version: 1  
+  categories:
+  - name: MotionSensor
+preferences:
+  - preferenceId: tempOffset
+    explicit: true
+  - name: motionSensitivity
+    title: "Motion Sensitivity Level"
+    required: true
+    preferenceId: motionSensitivityAvoidSTError
+    preferenceType: enumeration
+    definition:
+      options:
+        sensitivityLow: "Low"
+        sensitivityMedium: "Medium"
+        sensitivityHigh: "High"
+        sensitivityVeryHigh: "Very High"
+        sensitivityMax: "Max"
+      default: sensitivityMax

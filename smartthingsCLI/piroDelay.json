@@ -1,0 +1,19 @@
+{
+  "dashboard":
+    { "states": [
+      { 
+        "label": "{{piroDelay.piroDelayValue}} seconds" 
+      }
+      ] 
+    },
+  "detailView":
+    [
+      {
+        "displayType": "state",
+        "label": "PIROccupiedToUnoccupiedDelay Interval",
+        "state": { 
+          "value": "{{piroDelay.piroDelayValue}} seconds" 
+        }
+      }
+    ]
+}

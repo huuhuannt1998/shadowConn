@@ -1,0 +1,18 @@
+# Custom min capability definition
+name: "minReportingInterval"
+id: "instantforge19660.minreportinginterval"
+version: 1
+presentation: hiddenAttributesMin_presentation
+
+attributes:
+  minInterval:
+    schema:
+      type: integer
+    default: 30
+
+commands:
+  setMinInterval:
+    arguments:
+      - name: value
+        schema:
+          type: integer

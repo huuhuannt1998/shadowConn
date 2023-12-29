@@ -1,0 +1,20 @@
+{
+    "dashboard":
+      { "states": [
+        { 
+          "label": "{{maxReportingInterval.maxInterval}} seconds" 
+        }
+        ] 
+      },
+    "detailView":
+      [
+        {
+          "displayType": "state",
+          "label": "Maximum Reporting Interval",
+          "state": { 
+            "value": "{{maxReportingInterval.minInterval}} seconds" 
+          }
+        }
+      ]
+  }
+  
