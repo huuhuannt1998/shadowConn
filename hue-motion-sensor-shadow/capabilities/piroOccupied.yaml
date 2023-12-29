@@ -1,0 +1,17 @@
+# Custom min capability definition
+name: "piroDelay"
+id: "instantforge19660.pirodelay"
+version: 1
+
+attributes:
+  piroDelayValue:
+    schema:
+      type: integer
+    default: 30
+
+commands:
+  setPiroDelayValue:
+    arguments:
+      - name: value
+        schema:
+          type: integer

@@ -1,0 +1,17 @@
+# Custom min capability definition
+name: "motionSensitivity"
+id: "instantforge19660.motionsensitivity"
+version: 1
+
+attributes:
+  motionSensitivityValue:
+    schema:
+      type: integer
+    default: 1
+
+commands:
+  setMotionSensitivityValue:
+    arguments:
+      - name: value
+        schema:
+          type: integer
