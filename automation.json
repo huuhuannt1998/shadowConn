@@ -1,0 +1,60 @@
+{
+    "name": "Matching status of bulbs",
+    "action": [
+        {
+            "if": {
+                "equals": {
+                    "left": {
+                        "device": {
+                            "devices": [
+                                "ID of bulb 1"
+                            ],
+                            "component": "main",
+                            "capability": "switch",
+                            "attribute": "switch"
+                        }
+                    },
+                    "right": {
+                        "string": "on"
+                    }
+                }
+            },
+            "then": [
+                {
+                    "command": {
+                        "devices": [
+                            "ID of bulb 2"
+                        ],
+                        "commands": [
+                            {
+                                "component": "main",
+                                "capability": "switch",
+                                "attribute": "switch",
+                                "command": "on",
+                                "arguments": []
+                            }
+                        ]
+                    }
+                }
+            ],
+            "else": [
+                {
+                    "command": {
+                        "devices": [
+                            "ID of bulb 2"
+                        ],
+                        "commands": [
+                            {
+                                "component": "main",
+                                "capability": "switch",
+                                "attribute": "switch",
+                                "command": "off",
+                                "arguments": []
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
