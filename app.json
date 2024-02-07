@@ -1,0 +1,22 @@
+{
+    "appName": "sync_device2",
+    "appType": "API_ONLY",
+    "classifications": [
+      "CONNECTED_SERVICE"
+    ],
+    "displayName": "SmartApp 2",
+    "description": "SmartApp 2 ffor syncing",
+    "singleInstance": true,
+    "apiOnly": {
+      "targetUrl": "https://st-api-subcription.glitch.me/"
+    },
+    "oauth": {
+      "clientName": "SmartApp 2",
+      "scope": [
+        "r:locations:*",
+        "r:devices:*",
+        "x:devices:*"
+      ],
+      "redirectUris": ["https://st-api-subcription.glitch.me/oauth/callback"]
+    }
+  }
