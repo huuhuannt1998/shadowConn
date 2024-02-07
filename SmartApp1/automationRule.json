@@ -1,0 +1,51 @@
+{
+    "name": "Sync Real Switch to Virtual Switch",
+    "actions": [
+      {
+        "if": {
+          "equals": {
+            "left": {
+              "device": {
+                "deviceId": "a7940a66-f91c-4c51-a279-9d2a332fde91",
+                "component": "main",
+                "capability": "switch",
+                "attribute": "switch"
+              }
+            },
+            "right": {
+              "string": "on"
+            }
+          },
+          "then": [
+            {
+              "command": {
+                "devices": ["a27770da-f4f9-48de-95cf-82948916b7f3"],
+                "commands": [
+                  {
+                    "component": "main",
+                    "capability": "switch",
+                    "command": "on"
+                  }
+                ]
+              }
+            }
+          ],
+          "else": [
+            {
+              "command": {
+                "devices": ["a27770da-f4f9-48de-95cf-82948916b7f3"],
+                "commands": [
+                  {
+                    "component": "main",
+                    "capability": "switch",
+                    "command": "off"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+  
